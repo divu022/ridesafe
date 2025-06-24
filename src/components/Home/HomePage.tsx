@@ -180,7 +180,7 @@ const HomePage: React.FC = () => {
         </div>
 
         {/* Quick Actions */}
-        <div className={`p-6 rounded-xl ${
+        {/* <div className={`p-6 rounded-xl ${
           state.theme === 'dark' ? 'bg-gray-800' : 'bg-white'
         } shadow-lg`}>
           <h3 className={`text-lg font-semibold mb-4 ${
@@ -198,7 +198,7 @@ const HomePage: React.FC = () => {
               View History
             </button>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
