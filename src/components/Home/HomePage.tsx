@@ -61,6 +61,12 @@ const HomePage: React.FC = () => {
           }`}>
             {greeting}, {state.user?.name || 'User'}!
           </h1>
+
+          {/* 🚀 Bolt AI Badge */}
+          <span className="inline-flex items-center px-3 py-1 mb-3 rounded-full text-sm font-medium bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-md">
+            🚀 Bolt AI
+          </span>
+
           <p className={`text-lg ${
             state.theme === 'dark' ? 'text-gray-300' : 'text-gray-600'
           }`}>
@@ -178,27 +184,6 @@ const HomePage: React.FC = () => {
             })}
           </div>
         </div>
-
-        {/* Quick Actions */}
-        {/* <div className={`p-6 rounded-xl ${
-          state.theme === 'dark' ? 'bg-gray-800' : 'bg-white'
-        } shadow-lg`}>
-          <h3 className={`text-lg font-semibold mb-4 ${
-            state.theme === 'dark' ? 'text-white' : 'text-gray-900'
-          }`}>
-            Quick Actions
-          </h3>
-          <div className="grid grid-cols-2 gap-4">
-            <button className="p-4 rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition-colors">
-              Book a Ride
-            </button>
-            <button className={`p-4 rounded-lg border-2 border-blue-600 text-blue-600 hover:bg-blue-50 transition-colors ${
-              state.theme === 'dark' ? 'hover:bg-blue-900' : ''
-            }`}>
-              View History
-            </button>
-          </div>
-        </div> */}
       </div>
     </div>
   );
